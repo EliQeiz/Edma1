@@ -22,7 +22,7 @@ export const menuItems: MenuItem[] = [
     price: 130,
     desc: "EDMA's legendary signature dish — a crowd-stopper",
     badge: "🏆 Signature",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"
+    image: "https://i.ytimg.com/vi/8tJeNDiSXiw/maxresdefault.jpg"
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ export const menuItems: MenuItem[] = [
     price: 70,
     desc: "Party jollof with perfectly seasoned chicken",
     badge: "🔥 Popular",
-    image: "https://images.unsplash.com/photo-1567364816519-cbc9c4ffe1eb?w=600"
+    image: "https://canadiancookingadventures.com/wp-content/uploads/2023/03/337127429_2157767654416168_5393424319079533313_n-735x850.jpg"
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ export const menuItems: MenuItem[] = [
     price: 75,
     desc: "Classic Ghanaian banku with grilled whole tilapia",
     badge: "🇬🇭 Local",
-    image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600"
+    image: "https://i0.wp.com/www.jamrock.com.gh/wp-content/uploads/2023/02/grilled_tilapia_regular_with_banku_a.jpg?fit=500%2C510&ssl=1"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const menuItems: MenuItem[] = [
     price: 90,
     desc: "Crispy yam chips paired with spiced wings",
     badge: "❤️ Favourite",
-    image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?w=600"
+    image: "https://thumbs.dreamstime.com/b/delicious-fried-chicken-wings-served-crispy-french-fries-side-salad-white-background-savor-irresistible-taste-399492728.jpg"
   },
   {
     id: 5,
@@ -58,7 +58,7 @@ export const menuItems: MenuItem[] = [
     price: 65,
     desc: "Slow-cooked rice infused with rich local spices",
     badge: "🍲 Homestyle",
-    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600"
+    image: "https://styleafrique.com/wp-content/uploads/2022/12/Ghanaian-Braised-Rice-960x694.jpeg"
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const menuItems: MenuItem[] = [
     price: 75,
     desc: "Smoky fried rice loaded with assorted proteins",
     badge: "🔥 Popular",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600"
+    image: "https://business-inventory.s3.eu-central-1.amazonaws.com/b21e390b-64fd-59dd-9447-df18f5f3bdd6"
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ export const menuItems: MenuItem[] = [
     price: 100,
     desc: "Silky banku with rich, thick okro stew",
     badge: "🇬🇭 Local",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600"
+    image: "https://decapitalgrille.com/wp-content/uploads/2023/09/okro-soup-1.jpg"
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ export const menuItems: MenuItem[] = [
     price: 80,
     desc: "Fiery noodles loaded with assorted meats",
     badge: "🌶️ Spicy",
-    image: "https://images.unsplash.com/photo-1555126634-323283e090fa?w=600"
+    image: "https://images.bolt.eu/store/2023/2023-08-02/514372a0-ffa1-4ecd-bf72-679a1787e330.jpeg"
   },
   {
     id: 9,
@@ -94,7 +94,7 @@ export const menuItems: MenuItem[] = [
     price: 60,
     desc: "Fresh garden salad with house dressing",
     badge: "🥗 Fresh",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxnk3lXcJmPiF9cCTwN6yRSnO4QFNHGviHQ&s"
   },
   {
     id: 10,
@@ -121,7 +121,7 @@ export const menuItems: MenuItem[] = [
     price: 100,
     desc: "Fresh-made Ghanaian soup — ask your server",
     badge: "🍲 Daily Special",
-    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600"
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdyccVhImK06-PjaTqJuxEaOhg_UBMRn0byw&s"
   }
 ];
 

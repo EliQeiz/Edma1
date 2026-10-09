@@ -1,6 +1,7 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown, MapPin, MessageCircle } from "lucide-react";
 import { brand } from "@/lib/brand";
 
@@ -15,13 +16,48 @@ const floatingWords = [
   { text: "VIBES", className: "bottom-[8%] left-[14%] text-7xl lg:text-9xl", duration: 20 }
 ];
 
+const heroImages = [
+  "/images/jollof-hero.webp",
+  "/images/jollof-chicken-eggs.webp",
+  "/images/assorted-jollof.webp",
+  "/images/goat-jollof.webp",
+  "/images/catering-spread.webp"
+];
+
 export default function Hero() {
+  const [activeImage, setActiveImage] = useState(0);
+  const reduceMotion = useReducedMotion();
   const { scrollY } = useScroll();
   const bgY = useTransform(scrollY, [0, 800], [0, 260]);
 
+  useEffect(() => {
+    heroImages.forEach((src) => {
+      const image = new window.Image();
+      image.src = src;
+    });
+
+    const interval = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % heroImages.length);
+    }, 3000);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
     <section id="top" className="relative grid min-h-screen place-items-center overflow-hidden px-4 pb-10 pt-24 sm:px-6 lg:px-8">
-      <motion.div aria-hidden className="absolute inset-0 bg-cover bg-center will-change-transform" style={{ y: bgY, backgroundImage: "url(/images/jollof-hero.webp)" }} />
+      <motion.div aria-hidden className="absolute -inset-y-16 inset-x-0 will-change-transform" style={{ y: bgY }}>
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={heroImages[activeImage]}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${heroImages[activeImage]})` }}
+            initial={{ opacity: 0, scale: reduceMotion ? 1 : 1.025 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: reduceMotion ? 0 : 0.9, ease: "easeInOut" }}
+          />
+        </AnimatePresence>
+      </motion.div>
       <div aria-hidden className="absolute inset-0 bg-[linear-gradient(90deg,rgba(38,6,7,0.96)_0%,rgba(38,6,7,0.86)_40%,rgba(38,6,7,0.35)_72%,rgba(38,6,7,0.52)_100%)]" />
       <div aria-hidden className="grain absolute inset-0 opacity-60" />
 

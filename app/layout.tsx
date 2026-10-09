@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const heroImage = "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=1920";
+const heroImage = "/images/jollof-hero.webp";
 
 export const metadata: Metadata = {
-  title: "EDMA Restaurant — Obuasi's Finest Dining",
+  metadataBase: new URL("https://jollof-vibes-swedru.elishaafari0.chatgpt.site"),
+  title: "Jollof Vibes — Ghanaian Jollof & Catering in Agona Swedru",
   description:
-    "Authentic Ghanaian and continental dishes in the heart of Obuasi. Visit us or call +233 20 932 8888.",
+    "Made-with-love Ghanaian jollof packs, family trays and event catering in Agona Swedru. Order on WhatsApp or call 024 089 0049.",
   openGraph: {
-    title: "EDMA Restaurant — Obuasi's Finest Dining",
+    title: "Jollof Vibes — Good Food. Great Love.",
     description:
-      "Authentic Ghanaian and continental dishes in the heart of Obuasi. Visit us or call +233 20 932 8888.",
+      "Ghanaian jollof packs, family trays and event catering in Agona Swedru.",
     images: [heroImage],
     type: "website"
   }

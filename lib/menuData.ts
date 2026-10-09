@@ -1,134 +1,30 @@
 export type MenuCategory =
-  | "Continental"
-  | "Rice & Noodles"
-  | "Local Dishes"
-  | "Sides & Salads";
+  | "Jollof Packs"
+  | "Proteins & Add-ons"
+  | "Pies & Sides"
+  | "Catering Trays";
 
 export type MenuItem = {
   id: number;
   name: string;
   category: MenuCategory;
-  price: number;
+  serving: string;
   desc: string;
   badge: string;
   image: string;
 };
 
 export const menuItems: MenuItem[] = [
-  {
-    id: 1,
-    name: "The Most Wanted",
-    category: "Continental",
-    price: 130,
-    desc: "EDMA's legendary signature dish — a crowd-stopper",
-    badge: "🏆 Signature",
-    image: "https://i.ytimg.com/vi/8tJeNDiSXiw/maxresdefault.jpg"
-  },
-  {
-    id: 2,
-    name: "Jollof Rice & Chicken",
-    category: "Rice & Noodles",
-    price: 70,
-    desc: "Party jollof with perfectly seasoned chicken",
-    badge: "🔥 Popular",
-    image: "https://canadiancookingadventures.com/wp-content/uploads/2023/03/337127429_2157767654416168_5393424319079533313_n-735x850.jpg"
-  },
-  {
-    id: 3,
-    name: "Banku & Tilapia",
-    category: "Local Dishes",
-    price: 75,
-    desc: "Classic Ghanaian banku with grilled whole tilapia",
-    badge: "🇬🇭 Local",
-    image: "https://i0.wp.com/www.jamrock.com.gh/wp-content/uploads/2023/02/grilled_tilapia_regular_with_banku_a.jpg?fit=500%2C510&ssl=1"
-  },
-  {
-    id: 4,
-    name: "Yam Chips & Chicken Wings",
-    category: "Local Dishes",
-    price: 90,
-    desc: "Crispy yam chips paired with spiced wings",
-    badge: "❤️ Favourite",
-    image: "https://thumbs.dreamstime.com/b/delicious-fried-chicken-wings-served-crispy-french-fries-side-salad-white-background-savor-irresistible-taste-399492728.jpg"
-  },
-  {
-    id: 5,
-    name: "Braised Rice",
-    category: "Rice & Noodles",
-    price: 65,
-    desc: "Slow-cooked rice infused with rich local spices",
-    badge: "🍲 Homestyle",
-    image: "https://styleafrique.com/wp-content/uploads/2022/12/Ghanaian-Braised-Rice-960x694.jpeg"
-  },
-  {
-    id: 6,
-    name: "Assorted Fried Rice",
-    category: "Rice & Noodles",
-    price: 75,
-    desc: "Smoky fried rice loaded with assorted proteins",
-    badge: "🔥 Popular",
-    image: "https://business-inventory.s3.eu-central-1.amazonaws.com/b21e390b-64fd-59dd-9447-df18f5f3bdd6"
-  },
-  {
-    id: 7,
-    name: "Banku & Okro",
-    category: "Local Dishes",
-    price: 100,
-    desc: "Silky banku with rich, thick okro stew",
-    badge: "🇬🇭 Local",
-    image: "https://decapitalgrille.com/wp-content/uploads/2023/09/okro-soup-1.jpg"
-  },
-  {
-    id: 8,
-    name: "Assorted Spicy Noodles",
-    category: "Rice & Noodles",
-    price: 80,
-    desc: "Fiery noodles loaded with assorted meats",
-    badge: "🌶️ Spicy",
-    image: "https://images.bolt.eu/store/2023/2023-08-02/514372a0-ffa1-4ecd-bf72-679a1787e330.jpeg"
-  },
-  {
-    id: 9,
-    name: "Chef's Special Salad",
-    category: "Sides & Salads",
-    price: 60,
-    desc: "Fresh garden salad with house dressing",
-    badge: "🥗 Fresh",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbxnk3lXcJmPiF9cCTwN6yRSnO4QFNHGviHQ&s"
-  },
-  {
-    id: 10,
-    name: "Russian Salad",
-    category: "Sides & Salads",
-    price: 60,
-    desc: "Creamy classic with vegetables and mayo",
-    badge: "🥗 Fresh",
-    image: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600"
-  },
-  {
-    id: 11,
-    name: "Pizza",
-    category: "Continental",
-    price: 120,
-    desc: "EDMA's take on a loaded stone-baked pizza",
-    badge: "🍕 Continental",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600"
-  },
-  {
-    id: 12,
-    name: "Soup of the Day",
-    category: "Local Dishes",
-    price: 100,
-    desc: "Fresh-made Ghanaian soup — ask your server",
-    badge: "🍲 Daily Special",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdyccVhImK06-PjaTqJuxEaOhg_UBMRn0byw&s"
-  }
+  { id: 1, name: "Jollof, Chicken & Egg", category: "Jollof Packs", serving: "Individual pack", desc: "Smoky Ghanaian jollof, grilled chicken, boiled egg and fresh garnish.", badge: "Most loved", image: "/images/jollof-chicken-eggs.webp" },
+  { id: 2, name: "Assorted Jollof", category: "Jollof Packs", serving: "Loaded pack", desc: "Jollof tossed with chicken, beef, sausage, peppers and onions.", badge: "Fully loaded", image: "/images/assorted-jollof.webp" },
+  { id: 3, name: "Jollof & Goat Meat", category: "Jollof Packs", serving: "Individual pack", desc: "Rich party jollof with seasoned goat meat, plantain and shito.", badge: "Ghana favourite", image: "/images/goat-jollof.webp" },
+  { id: 4, name: "Jollof Vibes Pack", category: "Jollof Packs", serving: "Ready to go", desc: "Jollof, grilled chicken, fried plantain, fresh salad and egg.", badge: "Lunch ready", image: "/images/individual-pack.webp" },
+  { id: 5, name: "Family Jollof Tray", category: "Catering Trays", serving: "Made for sharing", desc: "A generous tray with chicken, plantain, egg, salad and shito.", badge: "Family tray", image: "/images/jollof-hero.webp" },
+  { id: 6, name: "Event Catering Spread", category: "Catering Trays", serving: "Events & occasions", desc: "Jollof, chicken, sausages, meat pies, eggs, plantain and salad.", badge: "Celebration", image: "/images/catering-spread.webp" },
+  { id: 7, name: "Golden Meat Pies", category: "Pies & Sides", serving: "Single or bulk order", desc: "Flaky, golden pastry filled with savoury seasoned minced meat.", badge: "Freshly baked", image: "/images/meat-pies-sausages.webp" },
+  { id: 8, name: "Fresh Garden Salad", category: "Pies & Sides", serving: "Side bowl", desc: "Crisp lettuce, cucumber, tomato, onion, carrot and sliced egg.", badge: "Fresh", image: "/images/fresh-salad.webp" },
+  { id: 9, name: "Grilled Chicken", category: "Proteins & Add-ons", serving: "Pieces or platter", desc: "Deeply seasoned chicken with caramelised, smoky grilled skin.", badge: "Hot off the grill", image: "/images/grilled-chicken.webp" },
+  { id: 10, name: "Sausage, Egg & Plantain", category: "Proteins & Add-ons", serving: "Add-on platter", desc: "Grilled sausages, boiled eggs and sweet fried ripe plantain.", badge: "Mix & match", image: "/images/sausage-egg-plantain.webp" }
 ];
 
-export const categories = [
-  "All",
-  "Local Dishes",
-  "Rice & Noodles",
-  "Sides & Salads",
-  "Continental"
-] as const;
+export const categories = ["All", "Jollof Packs", "Proteins & Add-ons", "Pies & Sides", "Catering Trays"] as const;
